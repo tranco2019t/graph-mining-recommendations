@@ -1,0 +1,26 @@
+.DS_Store
+node_modules
+*.class
+package-lock.json
+code/csharp/bin
+code/csharp/debug
+code/csharp/obj
+code/javascript/node_modules
+code/java/target
+pythonenv3.8
+
+# Local runtime data (Neo4j)
+data/databases/
+data/dbms/
+data/transactions/
+data/server_id
+
+# Local env
+graphql/.env
+
+# Keep repo lightweight for GitHub
+data/*.dump
+data/*.bak
+
+# Local backups
+.git_old_*/

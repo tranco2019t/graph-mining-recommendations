@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recommendations Demo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>GraphQL Recommendations Demo</h1>
+      <p class="hint">Neo4j GraphQL endpoint: http://localhost:4000</p>
+
+      <section class="card">
+        <label for="endpoint">Endpoint</label>
+        <input id="endpoint" value="http://localhost:4000/" />
+
+        <label for="movie">Movie title</label>
+        <input id="movie" value="Matrix, The" />
+
+        <div class="actions">
+          <button id="btn-movies">Load 5 movies</button>
+          <button id="btn-similar">Load similar</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Response</h2>
+        <pre id="output">Click a button to run GraphQL query...</pre>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
